@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import Feature from './Feature'
-import WordList from '../dictionary/WordList'
 import Practice from './Practice'
 import { connect } from 'react-redux'
+import MagooshList from '../dictionary/MagooshList';
 
-class Dashboard extends Component {
+class MagooshDashboard extends Component {
     render() { 
         //console.log(this.props);
         const { magooshWords } = this.props;
@@ -12,7 +12,7 @@ class Dashboard extends Component {
             <div className="container-fluid">
               <div className="row">
                 <Feature />
-                <WordList magooshWords={magooshWords}/>
+                <MagooshList magooshWords={magooshWords}/>
                 <Practice />
               </div>
             </div>
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default connect(mapStateToProps)(MagooshDashboard);

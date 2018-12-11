@@ -13,13 +13,13 @@ const Navbar = ()=> {
           </button>
           <div className="collapse navbar-collapse" id="gre-navbar">
             <ul className="navbar-nav mr-auto">
-              <form className="form-inline ml-5">
-                <input className="form-control" type="text" placeholder="Search Word" aria-label="Search" />
-              </form>
+              <li className="nav-item">
+                <NavLink to="/#" className="nav-link" >about</NavLink>
+              </li>
             </ul>
             <ul className="navbar-nav ">
               <li className="nav-item active">
-                <NavLink to="/" className="nav-link" >Magoosh</NavLink>
+                <NavLink to="/magoosh" className="nav-link" >Magoosh</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/#" className="nav-link disabled">Barron</NavLink>
